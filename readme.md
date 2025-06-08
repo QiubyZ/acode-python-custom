@@ -21,7 +21,10 @@
         "acode.python.custom": {
         "serverPath": "jedi-language-server",
         "arguments": []
-        },
+        "languageClientConfig": {
+            "initializationOptions": {}
+        }
+    },
     ```
 
   - if you want uses Pyright
@@ -30,12 +33,17 @@
     ```
     settings.json
     ```json
-        "acode.python.custom": {
+    "acode.python.custom": {
         "serverPath": "python",
         "arguments": [
-          "-m","pyright.langserver", "--stdio"
-        ]
-      },
+            "-m",
+            "pyright.langserver",
+            "--stdio"
+        ],
+        "languageClientConfig": {
+            "initializationOptions": {}
+        }
+    },
     ```
     [Pyright Video Preview](https://youtu.be/kIFx0yWQbz0?si=PsNRUjgQXIqwmAKJ)
 
